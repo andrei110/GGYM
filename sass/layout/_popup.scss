@@ -1,0 +1,83 @@
+.popup {
+  width: 85vw;
+  height: 80vh;
+  background-color: $color-white;
+  @include absCenter();
+  position: fixed;
+  z-index: 6;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+
+  @media (min-width: 600px) {
+    width: 70vw;
+    height: 75vh;
+  }
+
+  &__heading-primary {
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
+
+    & h1 {
+      font-size: clamp(1.5rem, 5vw, 4rem);
+    }
+  }
+
+  @media (min-width: 600px) {
+    &__container--grid {
+      display: grid;
+      width: 90%;
+      height: 90%;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__title {
+    font-size: clamp($default-font-size, 2vw, $max-font-size);
+    font-weight: 600;
+  }
+
+  &__time {
+    font-weight: 600;
+    transform: translateY(-0.3rem);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    outline: none;
+    border: none;
+    background-color: $color-white;
+    color: $color-primary;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @media (min-width: 800px) {
+      top: 1.5rem;
+      right: 2rem;
+    }
+
+    &:hover {
+      color: $color-black;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.fa-times {
+  font-size: clamp(2rem, 5vw, 4rem);
+}

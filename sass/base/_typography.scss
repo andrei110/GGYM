@@ -1,0 +1,48 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-black;
+  //   font-size: $default-font-size;
+  font-size: clamp($min-font-size, 2vw, $default-font-size);
+  @media (min-width: 1440px) {
+    font-size: clamp($default-font-size, 1.1vw, $middle-font-size);
+  }
+  @media (min-width: 2000px) {
+    font-size: clamp($middle-font-size, 1.1vw, $max-font-size);
+  }
+}
+
+.heading-primary {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  margin-bottom: 2.5rem;
+  @media (min-width: 500px) {
+    margin-bottom: 3rem;
+  }
+  @media (min-width: 800px) {
+    padding-top: 7rem;
+    margin-bottom: 4rem;
+  }
+
+  & h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: 1px;
+    color: $color-white;
+    text-shadow: 0.3rem 0.3rem 0.6rem black;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: $color-primary;
+      transform: scale(1.1, 1.05) skewX(-15deg);
+      z-index: -1;
+    }
+  }
+}

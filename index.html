@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>GGYM Fitness</title>
+</head>
+<body>
+    <header class="header" id="section--1" name="section--1">
+        <nav class="nav">
+            <a class="nav__logo" href="#section--1">GGYM</a>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#section--2" class="nav__link btn__about-us">ABOUT US</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#section--3" class="nav__link btn__team">OUR TEAM</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#section--4" class="nav__link btn__gallery">GALLERY</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link btn__subscriptions">SUBSCRIPTIONS</a>
+                </li>
+            </ul>
+            <div class="nav__burger">
+                <div class="nav__burger--1"></div>
+                <div class="nav__burger--2"></div>
+                <div class="nav__burger--3"></div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero__text">
+                <h1 class="hero__text--1">DON'T &nbsp;<span class="hero__text--span">WISH</span></h1>
+                <h1 class="hero__text--2">FOR A GOOD BODY,</h1>
+                <h1 class="hero__text--3"><span class="hero__text--span">WORK</span> &nbsp;FOR IT</h1>
+                <div class="hero__text--left-bar"></div>
+            </div>
+        </div>
+        <div class="bg-popup hidden"></div>
+        <div class="popup hidden">
+            <button class="popup__btn-close"><i class="fas fa-times"></i></button>
+            <div class="popup__heading-primary heading-primary">
+                <h1>Subscriptions</h1>
+            </div>
+            <div class="popup__container--grid">
+                <div class="popup__container">
+                    <p class="popup__title">Morning Subscription</p>
+                    <p class="popup__time">06:00 - 17:00</p>
+                    <div class="popup__subscriptions">
+                        <p class="popup__subscription">15 &euro; / 1 month</p>
+                        <p class="popup__subscription">40 &euro; / 3 month</p>
+                        <p class="popup__subscription">70 &euro; / 6 month</p>
+                        <p class="popup__subscription">120 &euro; / 1 year</p>
+                    </div>
+                </div>
+                <div class="popup__container">
+                    <p class="popup__title">Full Time Subscription</p>
+                    <p class="popup__time">06:00 - 24:00</p>
+                    <div class="popup__subscriptions">
+                        <p class="popup__subscription">20 &euro; / 1 month</p>
+                        <p class="popup__subscription">55 &euro; / 3 month</p>
+                        <p class="popup__subscription">80 &euro; / 6 month</p>
+                        <p class="popup__subscription">150 &euro; / 1 year</p>
+                    </div>
+                </div>
+                <div class="popup__container">
+                    <p class="popup__title">Aerobic</p>
+                    <div class="popup__subscriptions">
+                        <p class="popup__subscription">20 &euro; / 1 month</p>
+                        <p class="popup__subscription">55 &euro; / 3 month</p>
+                        <p class="popup__subscription">80 &euro; / 6 month</p>
+                        <p class="popup__subscription">150 &euro; / 1 year</p>
+                    </div>
+                </div>
+                <div class="popup__container">
+                    <p class="popup__title">Personal Training</p>
+                    <div class="popup__subscriptions">
+                        <p class="popup__subscription">70 &euro; / 1 month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> 
+    
+    <main class="main">
+        <!-- ABOUT US SECTION -->
+        <section class="section" id="section--2">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="/images-videos/aboutUsVideo.mp4" type="video/mp4">
+                    <source src="/images-videos/aboutUsVideo.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="heading-primary">
+                <h1>ABOUT US</h1>
+            </div>
+
+            <div class="description">
+                <div class="description__border-top"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium dolorum repellat voluptatum ad fugiat, nam animi temporibus blanditiis esse? Repellat omnis distinctio perferendis laudantium accusantium commodi repellendus quod architecto.</p>
+                <div class="description__border-bottom"></div>
+            </div>
+            
+            <div class="counter">
+                <div class="counter__container">
+                    <div class="counter__number" data-target="700">0</div>
+                    <p class="counter__text">Happy Customers</p>
+                </div>
+                <div class="counter__container">
+                    <div class="counter__number" data-target="8">0</div>
+                    <p class="counter__text">Qualified Coaches</p>
+                </div>
+                <div class="counter__container">
+                    <div class="counter__number" data-target="10">0</div>
+                    <p class="counter__text">Years of GGYM</p>
+                </div>
+            </div>
+        </section>
+        <!-- GGYM TEAM SECTION -->
+        <section class="section" id="section--3">
+            <div class="heading-primary">
+                <h1>GGYM TEAM</h1>
+            </div>
+            <div class="team__container--positioning">
+                <div class="team__container">
+                    <!-- Coach 1 -->
+                    <div class="team__item team__item--left">
+                        <div class="team__photo--container">
+                            <img src="/images-videos/coaches/coach--1_lazy.webp"
+                            data-src="/images-videos/coaches/coach--1.webp" class="team__photo" alt="coach1">
+                            <div class="team__photo--name-container">
+                                <h1 class="team__photo--name">Lorem Ipsum</h1>
+                            </div>
+                        </div>
+                        <div class="team__description">
+                            <p class="team__description--title">Lorem Ipsum</p>
+                            <p class="team__description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsum cupiditate error vel nulla ex pariatur quod in nobis beatae exercitationem voluptatem dolor quas, sed placeat nisi harum, laudantium dolorum!</p>
+                        </div>
+                    </div>
+                    <!-- Coach 2 -->
+                    <div class="team__item team__item--right">
+                        <div class="team__photo--container">
+                            <img src="/images-videos/coaches/coach--2_lazy.webp"
+                            data-src="/images-videos/coaches/coach--2.webp" class="team__photo team__photo-right" alt="coach2">
+                            <div class="team__photo--name-container team__photo--name-container-right">
+                                <h1 class="team__photo--name">Lorem Ipsum</h1>
+                            </div>
+                        </div>
+                        <div class="team__description team__description-right">
+                            <p class="team__description--title team__description--title-right">Lorem Ipsum</p>
+                            <p class="team__description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsum cupiditate error vel nulla ex pariatur quod in nobis beatae exercitationem voluptatem dolor quas, sed placeat nisi harum, laudantium dolorum!</p>
+                        </div>
+                    </div>
+                    <!-- Coach 3 -->
+                    <div class="team__item team__item--left">
+                        <div class="team__photo--container">
+                            <img src="/images-videos/coaches/coach--3_lazy.webp"
+                            data-src="/images-videos/coaches/coach--3.webp" class="team__photo" alt="coach3">
+                            <div class="team__photo--name-container">
+                                <h1 class="team__photo--name">Lorem Ipsum</h1>
+                            </div>
+                        </div>
+                        <div class="team__description">
+                            <p class="team__description--title">Lorem Ipsum</p>
+                            <p class="team__description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsum cupiditate error vel nulla ex pariatur quod in nobis beatae exercitationem voluptatem dolor quas, sed placeat nisi harum, laudantium dolorum!</p>
+                        </div>
+                    </div>
+                    <!-- Coach 4 -->
+                    <div class="team__item team__item--right">
+                        <div class="team__photo--container">
+                            <img src="/images-videos/coaches/coach--4_lazy.webp"
+                            data-src="/images-videos/coaches/coach--4.webp" class="team__photo team__photo-right" alt="coach4">
+                            <div class="team__photo--name-container team__photo--name-container-right">
+                                <h1 class="team__photo--name">Lorem Ipsum</h1>
+                            </div>
+                        </div>
+                        <div class="team__description team__description-right">
+                            <p class="team__description--title team__description--title-right">Lorem Ipsum</p>
+                            <p class="team__description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsum cupiditate error vel nulla ex pariatur quod in nobis beatae exercitationem voluptatem dolor quas, sed placeat nisi harum, laudantium dolorum!</p>
+                        </div>
+                    </div>
+                    <!-- Coach 5 -->
+                    <div class="team__item team__item--left">
+                        <div class="team__photo--container">
+                            <img src="/images-videos/coaches/coach--5_lazy.webp"
+                            data-src="/images-videos/coaches/coach--5.webp" class="team__photo" alt="coach5">
+                            <div class="team__photo--name-container">
+                                <h1 class="team__photo--name">Lorem Ipsum</h1>
+                            </div>
+                        </div>
+                        <div class="team__description">
+                            <p class="team__description--title">Lorem Ipsum</p>
+                            <p class="team__description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsum cupiditate error vel nulla ex pariatur quod in nobis beatae exercitationem voluptatem dolor quas, sed placeat nisi harum, laudantium dolorum!</p>
+                        </div>
+                    </div>
+                    <!-- Coach 6 -->
+                    <div class="team__item team__item--right">
+                        <div class="team__photo--container">
+                            <img src="/images-videos/coaches/coach--6_lazy.webp"
+                            data-src="/images-videos/coaches/coach--6.webp" class="team__photo team__photo-right" alt="coach6">
+                            <div class="team__photo--name-container team__photo--name-container-right">
+                                <h1 class="team__photo--name">Lorem Ipsum</h1>
+                            </div>
+                        </div>
+                        <div class="team__description team__description-right">
+                            <p class="team__description--title team__description--title-right">Lorem Ipsum</p>
+                            <p class="team__description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsum cupiditate error vel nulla ex pariatur quod in nobis beatae exercitationem voluptatem dolor quas, sed placeat nisi harum, laudantium dolorum!</p>
+                        </div>
+                    </div>
+                    <!-- Coach 7 -->
+                    <div class="team__item team__item--left">
+                        <div class="team__photo--container">
+                            <img src="/images-videos/coaches/coach--7_lazy.webp"
+                            data-src="/images-videos/coaches/coach--7.webp" class="team__photo" alt="coach7">
+                            <div class="team__photo--name-container">
+                                <h1 class="team__photo--name">Lorem Ipsum</h1>
+                            </div>
+                        </div>
+                        <div class="team__description">
+                            <p class="team__description--title">Lorem Ipsum</p>
+                            <p class="team__description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsum cupiditate error vel nulla ex pariatur quod in nobis beatae exercitationem voluptatem dolor quas, sed placeat nisi harum, laudantium dolorum!</p>
+                        </div>
+                    </div>
+                    <!-- Coach 8 -->
+                    <div class="team__item team__item--right">
+                        <div class="team__photo--container">
+                            <img src="/images-videos/coaches/coach--8_lazy.webp"
+                            data-src="/images-videos/coaches/coach--8.webp" class="team__photo team__photo-right" alt="coach8">
+                            <div class="team__photo--name-container team__photo--name-container-right">
+                                <h1 class="team__photo--name">Lorem Ipsum</h1>
+                            </div>
+                        </div>
+                        <div class="team__description team__description-right">
+                            <p class="team__description--title team__description--title-right">Lorem Ipsum</p>
+                            <p class="team__description__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ipsum cupiditate error vel nulla ex pariatur quod in nobis beatae exercitationem voluptatem dolor quas, sed placeat nisi harum, laudantium dolorum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section--4">
+            <div class="heading-primary">
+                <h1>GALLERY</h1>
+            </div>
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="/images-videos/gallery/gallery--1_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--1.webp" class="gallery__img" alt="gallery1">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="/images-videos/gallery/gallery--2_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--2.webp" class="gallery__img" alt="gallery2">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="/images-videos/gallery/gallery--3_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--3.webp" class="gallery__img" alt="gallery3">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="/images-videos/gallery/gallery--4_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--4.webp" class="gallery__img" alt="gallery4">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="/images-videos/gallery/gallery--5_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--5.webp" class="gallery__img" alt="gallery5">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="/images-videos/gallery/gallery--6_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--6.webp" class="gallery__img" alt="gallery6">
+                </figure>
+                <figure class="gallery__item gallery__item--7">
+                    <img src="/images-videos/gallery/gallery--7_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--7.webp" class="gallery__img" alt="gallery7">
+                </figure>
+                <figure class="gallery__item gallery__item--8">
+                    <img src="/images-videos/gallery/gallery--8_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--8.webp" class="gallery__img" alt="gallery8">
+                </figure>
+                <figure class="gallery__item gallery__item--9">
+                    <img src="/images-videos/gallery/gallery--9_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--9.webp" class="gallery__img" alt="gallery9">
+                </figure>
+                <figure class="gallery__item gallery__item--10">
+                    <img src="/images-videos/gallery/gallery--10_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--10.webp" class="gallery__img" alt="gallery10">
+                </figure>
+                <figure class="gallery__item gallery__item--11">
+                    <img src="/images-videos/gallery/gallery--11_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--11.webp" class="gallery__img" alt="gallery11">
+                </figure>
+                <figure class="gallery__item gallery__item--12">
+                    <img src="/images-videos/gallery/gallery--12_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--12.webp" class="gallery__img" alt="gallery12">
+                </figure>
+                <figure class="gallery__item gallery__item--13">
+                    <img src="/images-videos/gallery/gallery--13_lazy.webp"
+                    data-src="/images-videos/gallery/gallery--13.webp" class="gallery__img" alt="gallery13">
+                </figure>
+            </div>
+            <div class="gallery-big">
+                <figure class="gallery-big__figure">
+                    <img src="/images-videos/gallery/gallery--13_lazy.webp" class="gallery-big__img" alt="galleryBig">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section" id="section--5">
+            <div class="slider">
+                <div class="slider__container">
+                    <div class="slider__item">
+                        <figure class="slider__shape">
+                            <img src="/images-videos/customer--1.webp" alt="customer1" class="slider__img slider__img--1">
+                            <figcaption class="slider__caption">Maria</figcaption>
+                        </figure>
+                        <div class="slider__text">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit enim, atque temporibus consequatur vero quod voluptatum? Excepturi debitis totam in! Adipisci officiis, dolores aspernatur recusandae laborum ad quibusdam doloribus.</p>
+                        </div>
+                    </div>
+    
+                    <div class="slider__item">
+                        <figure class="slider__shape">
+                            <img src="/images-videos/customer--2.webp" alt="customer1" class="slider__img slider__img--2">
+                            <figcaption class="slider__caption">Alex</figcaption>
+                        </figure>
+                        <div class="slider__text">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit enim, atque temporibus consequatur vero quod voluptatum? Excepturi debitis totam in! Adipisci officiis, dolores aspernatur recusandae laborum ad quibusdam doloribus.</p>
+                        </div>
+                    </div>
+    
+                    <div class="slider__item">
+                        <figure class="slider__shape">
+                            <img src="/images-videos/customer--3.webp" alt="customer1" class="slider__img slider__img--3">
+                            <figcaption class="slider__caption">Anna</figcaption>
+                        </figure>
+                        <div class="slider__text">
+                            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit enim, atque temporibus consequatur vero quod voluptatum? Excepturi debitis totam in! Adipisci officiis, dolores aspernatur recusandae laborum ad quibusdam doloribus.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider__btn slider__btn--left"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider__btn slider__btn--right"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider__dots"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a class="nav__logo" href="#section--1">GGYM</a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#section--2" class="footer__link btn__about-us">ABOUT US</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#section--3" class="footer__link btn__team">OUR TEAM</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#section--4" class="footer__link btn__gallery">GALLERY</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link btn__subscriptions">SUBSCRIPTIONS</a>
+                </li>
+            </ul>
+            
+            <div class="footer__hero">
+                <button class="footer__hero-btn"><i class="fas fa-chevron-up"></i></button>
+            </div>
+        </footer>
+    </main>
+    <script src='script.js'></script>  
+</body>
+</html>

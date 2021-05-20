@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+}
+#section--2 {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#section--3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#section--4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#section--5 {
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: 240px) {
+    height: 60rem;
+  }
+  @media (min-width: 260px) {
+    height: 55rem;
+  }
+  @media (min-width: 280px) {
+    height: 50rem;
+  }
+  @media (min-width: 300px) {
+    height: 46rem;
+  }
+  @media (min-width: 500px) {
+    height: 35rem;
+  }
+  @media (min-width: 2000px) {
+    height: 50rem;
+  }
+}

@@ -1,0 +1,9 @@
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.counter--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

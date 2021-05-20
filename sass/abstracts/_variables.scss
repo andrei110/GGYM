@@ -1,0 +1,24 @@
+//COLORS
+$color-primary: #5da117;
+$color-primary-dark: #29361e;
+$color-secondary: #eee;
+
+$color-white: #fff;
+$color-black: #000;
+
+$gradient-primary: linear-gradient(
+  to top left,
+  $color-primary,
+  $color-primary-dark
+);
+$gradient-secundary: linear-gradient(
+  to top left,
+  rgba($color-primary, 0.9),
+  rgba($color-primary-dark, 0.95)
+);
+
+//FONT
+$default-font-size: 1.4rem;
+$min-font-size: 1.2rem;
+$middle-font-size: 1.8rem;
+$max-font-size: 2.5rem;
