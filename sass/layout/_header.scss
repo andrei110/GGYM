@@ -1,23 +1,24 @@
 .hero {
   height: 91vh;
-  background-image: linear-gradient(
+  background: linear-gradient(
       to top,
       rgba($color-black, 0.8),
       rgba($color-black, 0.7)
     ),
-    url("../../images-videos/hero.JPG");
+    url("../../images-videos/hero.JPG"), no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
   z-index: -2;
 
   @media (min-width: 1024px) {
-    background-image: linear-gradient(
+    background: linear-gradient(
         to top,
         rgba($color-black, 0.7),
         rgba($color-black, 0.85)
       ),
-      url("../../images-videos/hero.JPG");
+      url("../../images-videos/hero.JPG"), no-repeat;
+    background-size: cover;
   }
 
   &__text {

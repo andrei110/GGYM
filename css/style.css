@@ -566,14 +566,15 @@ body {
 
 .hero {
   height: 91vh;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../../images-videos/hero.JPG");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../../images-videos/hero.JPG"), no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
   z-index: -2; }
   @media (min-width: 1024px) {
     .hero {
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url("../../images-videos/hero.JPG"); } }
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url("../../images-videos/hero.JPG"), no-repeat;
+      background-size: cover; } }
   .hero__text {
     position: absolute;
     top: 55vh;
