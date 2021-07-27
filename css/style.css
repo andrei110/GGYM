@@ -573,7 +573,7 @@ body {
   z-index: -2; }
   @media (min-width: 1024px) {
     .hero {
-      background: url("../../images-videos/hero.jpg");
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url("../images-videos/hero.jpg");
       background-size: cover; } }
   .hero__text {
     position: absolute;

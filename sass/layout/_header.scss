@@ -12,14 +12,12 @@
   z-index: -2;
 
   @media (min-width: 1024px) {
-    // background-image: linear-gradient(
-    //     to top,
-    //     rgba($color-black, 0.7),
-    //     rgba($color-black, 0.85)
-    //   ),
-    //   url("../../images-videos/hero.png");
-    background:
-      url("../../images-videos/hero.jpg");
+    background-image: linear-gradient(
+        to top,
+        rgba($color-black, 0.7),
+        rgba($color-black, 0.85)
+      ),
+      url("../images-videos/hero.jpg");
     background-size: cover;
   }
 
