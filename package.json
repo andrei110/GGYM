@@ -2,17 +2,24 @@
   "name": "ggym",
   "version": "1.0.0",
   "description": "",
+  "browserslist": "last 10 versions",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "watch:sass": "sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass"
+    "start": "npm-run-all --parallel watch:sass devserver",
+    "compile:sass": "sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss css/style.comp.css --use autoprefixer -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "AV",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^6.0.0",
-    "npm-run-all": "^4.1.5"
+    "autoprefixer": "^10.4.21",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.86.3"
   }
 }

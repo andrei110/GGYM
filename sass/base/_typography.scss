@@ -46,3 +46,15 @@ body {
     }
   }
 }
+
+.team__description__text {
+  font-size: 1.2rem;
+
+  @media (min-width: 1440px) {
+    font-size: clamp(1.3rem, 0.85vw, 1.7rem);
+  }
+  @media (min-width: 2000px) {
+    // font-size: clamp(1.3rem, 0.85vw, 1.7rem);
+    font-size: 2.2rem;
+  }
+}

@@ -357,7 +357,7 @@ imgTarget.forEach((img) => imgObserver.observe(img));
 
 // Big Images Gallery
 let bigPhoto = false;
-document.querySelector(".gallery-big").classList.add("hidden");
+// document.querySelector(".gallery-big").classList.add("hidden");
 galleryItem.forEach((item, i) => {
   item.addEventListener("click", () => {
     document.querySelector(".gallery-big__img").src = item.src;
